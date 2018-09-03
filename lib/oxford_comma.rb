@@ -5,8 +5,7 @@ if array.size == 2
 elsif array.size > 2
 array.insert(array.length-1,"and ")
 str = array.last(2).join
-array.delete(array[array.length])
-array.delete(array[array.length])
+array.pop(2)
 array.push(str)
 binding.pry
  end
